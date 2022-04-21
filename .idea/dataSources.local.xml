@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-213.6777.52">
+    <data-source name="MariaDB - @fridge.cukhjuhsjgqf.us-east-1.rds.amazonaws.com" uuid="86ee1b40-6d55-458e-b728-a775de3ff6ab">
+      <database-info product="MariaDB" version="10.6.7-MariaDB-log" jdbc-version="4.2" driver-name="MariaDB Connector/J" driver-version="2.7.3" dbms="MARIADB" exact-version="10.6.7" exact-driver-version="2.7">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>fridge</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

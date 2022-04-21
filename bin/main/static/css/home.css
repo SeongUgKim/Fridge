@@ -1,0 +1,84 @@
+/*@import "bootstrap.min.css";
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.row {
+    display: flex;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: var(--box-bg-color);
+
+}
+button {
+    background-color: #756CDD;
+    color: white;
+    border: none;
+    display: block;
+    width: 180px;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+
+
+}
+button:hover {
+    transform: scale(1) translateY(-15px);
+}
+.button1{
+    margin-left: 7rem;
+    margin-right: 1rem;
+}
+
+
+:root {
+    --sub-txt-color: #757786;
+    --main-bg-color: #1b1e37;
+    --box-bg-color: rgba(63, 67, 110, 0.45);
+
+}
+
+body {
+    background: linear-gradient(45deg, var(--main-bg-color), #373952);
+    color: white;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -244.4px;
+    margin-left: -300px;
+    width: 100%;
+    min-height: 100vh;
+    color:#fff ;
+    z-index: 2;
+}
+
+.py-5 {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+

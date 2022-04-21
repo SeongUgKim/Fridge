@@ -1,0 +1,14 @@
+@import "bootstrap.min.css";
+
+:root {
+    --sub-txt-color: #757786;
+    --main-bg-color: #1b1e37;
+    --box-bg-color: rgba(63, 67, 110, 0.45);
+}
+
+body {
+    background: linear-gradient(45deg, var(--box-bg-color), #373952);
+    color: white;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}

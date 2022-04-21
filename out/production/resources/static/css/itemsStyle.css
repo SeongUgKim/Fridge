@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sub-txt-color: #757786;
+    --main-bg-color: #1b1e37;
+    --box-bg-color: rgba(63, 67, 110, 0.45);
+}
+
+body {
+    background: linear-gradient(45deg, var(--main-bg-color), #373952);
+    color: white;
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+}
+
+h1,
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    border-spacing: 1rem 1rem;
+}
+
+th {
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+
+a {
+    color: #756CDD;
+}
+
+.button {
+    background-color: #756CDD;
+    color: white;
+    border: none;
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    padding: 0.5rem 0;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.box {
+    background-color: var(--box-bg-color);
+    border-radius: 8px;
+    padding: 2rem;
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    pointer-events: none;
+}
+
+.fruit-photo1 {
+    /* 400px is just random value i assigned */
+    width: 400px;
+    height: 400px;
+    /* need to call position: relative on container */
+    position: absolute;
+    /* 370px to the left from right edge of whatever is relative */
+    left: -350px;
+    top: 0%;
+    /* rotate image by 15, not necessary */
+    transform: rotateY(180deg);
+    /* make image dim */
+    opacity: 0.3;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.fruit-photo2 {
+    /* 400px is just random value i assigned */
+    width: 400px;
+    height: 400px;
+    /* need to call position: relative on container */
+    position: absolute;
+    /* 370px to the left from right edge of whatever is relative */
+    right: -350px;
+    top: 0%;
+    /* rotate image by 15, not necessary */
+    /* make image dim */
+    opacity: 0.3;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.back-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    top: 5vh;
+    left: 5vh;
+    color: white;
+    opacity: 0.7;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+i {
+    margin-right: 6px;
+    color: white;
+}
+
+.back-btn:hover {
+    opacity: 1;
+}
+
+.back-btn:hover > i {
+    animation: btn-bounce 0.3s alternate infinite;
+    /* transform: translateX(-2px); */
+}
+
+/* .back-btn:hover > span {
+  text-decoration: underline;
+} */
+
+@keyframes btn-bounce {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-2px);
+    }
+}

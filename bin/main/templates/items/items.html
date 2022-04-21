@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+<!--    <link th:href="@{/css/bootstrap.min.css}"-->
+<!--          href="../css/bootstrap.min.css" rel="stylesheet">-->
+    <link th:href="@{/css/itemsStyle.css}"
+          href="../css/itemsStyle.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <img class = "fruit-photo1" th:src="@{/img/fruits.png}" alt = "fruit-photo"/>
+    <img class = "fruit-photo2" th:src="@{/img/fruits.png}" alt = "fruit-photo"/>
+
+    <h2 th:text="#{page.items}">Item List</h2>
+
+    <button class="button"
+            onclick="location.href='addForm.html'"
+            th:onclick="|location.href='@{/items/add}'|"
+            type="button" th:text="#{page.addItem}">Item Add</button>
+
+    <div>
+
+    <div class="box">
+        <table class="table">
+            <thead>
+            <tr>
+                <th th:text="#{label.item.id}">ID</th>
+                <th th:text="#{label.item.itemName}">Item Name</th>
+                <th th:text="#{label.item.quantity}">Quantity</th>
+                <th th:text="#{label.item.expiration}">Expiration Date</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="item : ${items}">
+                <td><a href="item.html" th:href="@{/items/{itemId}(itemId=${item.id})}" th:text="${item.id}">ID</a></td>
+                <td><a href="item.html" th:href="@{|/items/${item.id}|}" th:text="${item.itemName}">Item Name</a></td>
+                <td th:text="${item.quantity}">10</td>
+                <td th:text="${item.expirationDate}">20</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+</div> <!-- /container -->
+
+</body>
+</html>
